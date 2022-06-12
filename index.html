@@ -1,60 +1,317 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>疫情逆行者</title>
-    <embed src="./img/music.mp4"  autoplay hidden="true" autostart="true" loop="true">
-    <style>
-        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td
-{margin: 0;padding: 0; background: transparent; }
-body{text-align: center;font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;}
-li{ list-style: none;}
-a{text-decoration: none; color: #000;}
-img{border: none;}
-*{
-    box-sizing: border-box;
-}
-
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <bgsound src="./img/music.mp4" autostart=true loop=infinite></bgsound>
-    <div>
-        <h3>疫情逆行者</h3>
-        <p>自疫情发生以来，一场争分夺秒与病毒赛跑的战役紧急打响，在当前疫情防控的危机时刻和紧要关头，
-        我们车队紧急行动起来，逆行上海，冲锋在前，驰援上海，确保货物运输畅通。</p>
+
+    <!-- 主导航 start -->
+    <div class="header">
+        <div class="header-in">
+            <div class="logo">
+                <img src="./images/logo_03.png" alt="">
+                <div class="flag-word">
+                    <strong>蓝莓派</strong>
+                    <h3>和音乐一起分享时光</h3>
+                </div>
+            </div>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="./index.html" class="navs on">首页</a></li>
+                    <li><a href="./yuezhang.html" class="navs">乐章</a></li>
+                    <li><span class="ts-num">12</span><a href="./tingshuo.html" class="navs">听说</a></li>
+                    <li><a href="./chat.html" class="navs">聊聊</a></li>
+                    <li><a href="./chengpin.html" class="navs">诚品</a></li>
+                    <li><a href="./blueberryjam.html" class="navs">蓝莓酱</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <div class="search">
+                    <form>
+                        <input type="search" id="search">
+                        <label for="search" id="search-button"></label>
+                    </form>
+                </div>
+                <div class="login-register">
+                    <a href="./login.html" class="login">登录</a>
+                    <a href="./login.html" class="register">注册</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="./img/1.jpg" alt="">
-    </div>
-    <div>
-        <audio id="audio1" src="./img/music.mp4" preload="auto"
-        autoplay="autoplay" controls loop>
-    </div>
-    <div>
-        <!-- <a href="./two.html">支援人员业务学习</a>
-        <a href="./three.html">现场教学</a>
-        <a href="./four.html">严格执表</a> -->
-        <ul>
-            <li><a href="./two.html">支援人员业务学习</a></li>
-            <li> <a href="./three.html">现场教学</a></li>
-            <li><a href="./four.html">严格执表</a></li>
-        </ul>
-    </div>
+    <!-- 主导航 end -->
     
-    
-    <!-- <script>
-       (function() {
-        var audio = document.getElementById('audio1');
-        // audio1 = audio;
-        // audio.src = './img/陈奕迅 - 孤勇者.mp3';
-        // audio.loop = true;
-        audio.autoplay = true;
-        audio.play();
-        // audio.addEventListener('canplay', canPlay, false);
-    })();
-    </script> -->
+    <!-- 轮播图 start -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="s-content s1">
+                    <div class="text">
+                        <h3>我在爱尔兰</h3>
+                        <p>爱尔兰（爱尔兰语：Poblacht na hÉireann；英语：Republic of Ireland）, 是一个西欧的议会共和制国家，西临大西洋，东靠爱尔兰海，与英国隔海相望，是北美通向欧洲的通道爱尔兰自然</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="s-content s2">
+                    <div class="text">
+                        <h3>一个人的东京</h3>
+                        <p>爱尔兰（爱尔兰语：Poblacht na hÉireann；英语：Republic of Ireland）, 是一个西欧的议会共和制国家，西临大西洋，东靠爱尔兰海，与英国隔海相望，是北美通向欧洲的通道爱尔兰自然</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="s-content s3">
+                    <div class="text">
+                        <h3>普罗旺斯的梦</h3>
+                        <p>爱尔兰（爱尔兰语：Poblacht na hÉireann；英语：Republic of Ireland）, 是一个西欧的议会共和制国家，西临大西洋，东靠爱尔兰海，与英国隔海相望，是北美通向欧洲的通道爱尔兰自然</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- 轮播图 end -->
+
+    <!-- 内容模块 -->
+    <div class="main">
+        <!-- 乐章 start -->
+        <div class="product">
+            <a href="#" class="p-title">
+                <span class="p-title-l">乐章</span>
+                <div class="icon">
+                    <img src="./images/yuezhangIcon_05.png" alt="">
+                </div>
+                <span class="p-title-t">MOVEMENT</span>
+            </a>
+            <div class="p-details">
+                <ul class="d-list">
+                    <li class="d-item">
+                        <div class="item-img">
+                            <a href="#">
+                                <img src="./images/yuezhangPic_05.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <a href="#" class="text-title">我是第一篇</a>
+                            <a href="#" class="text-author">小夏同学</a>
+                            <p class="text-content">
+                                时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；
+                                这个午后，我站在开满丁香花的树下目送你走远，紫色的小花散发着幽幽的暗香，
+                                我忍不住深吸一口气...
+                            </p>
+                            <div class="comment">
+                                <i class="zan-num">20</i>
+                                <i class="zan-icon"></i>
+                                <i class="comment-num">40</i>
+                                <i class="comment-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-item">
+                        <div class="item-img">
+                            <a href="#">
+                                <img src="./images/yuezhangPic_05.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <a href="#" class="text-title">我是第一篇</a>
+                            <a href="#" class="text-author">小夏同学</a>
+                            <p class="text-content">
+                                时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；
+                                这个午后，我站在开满丁香花的树下目送你走远，紫色的小花散发着幽幽的暗香，
+                                我忍不住深吸一口气...
+                            </p>
+                            <div class="comment">
+                                <i class="zan-num">20</i>
+                                <i class="zan-icon"></i>
+                                <i class="comment-num">40</i>
+                                <i class="comment-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-item">
+                        <div class="item-img">
+                            <a href="#">
+                                <img src="./images/yuezhangPic_05.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <a href="#" class="text-title">我是第一篇</a>
+                            <a href="#" class="text-author">小夏同学</a>
+                            <p class="text-content">
+                                时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；
+                                这个午后，我站在开满丁香花的树下目送你走远，紫色的小花散发着幽幽的暗香，
+                                我忍不住深吸一口气...
+                            </p>
+                            <div class="comment">
+                                <i class="zan-num">20</i>
+                                <i class="zan-icon"></i>
+                                <i class="comment-num">40</i>
+                                <i class="comment-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-item">
+                        <div class="item-img">
+                            <a href="#">
+                                <img src="./images/yuezhangPic_05.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <a href="#" class="text-title">我是第一篇</a>
+                            <a href="#" class="text-author">小夏同学</a>
+                            <p class="text-content">
+                                时光的流逝，如缓缓流过的小溪，再怎样努力也无法逆转它的方向；
+                                这个午后，我站在开满丁香花的树下目送你走远，紫色的小花散发着幽幽的暗香，
+                                我忍不住深吸一口气...
+                            </p>
+                            <div class="comment">
+                                <i class="zan-num">20</i>
+                                <i class="zan-icon"></i>
+                                <i class="comment-num">40</i>
+                                <i class="comment-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 乐章 end -->
+
+        <!-- 游记 start -->
+        <div class="product">
+            <a href="#" class="p-title">
+                <span class="p-title-l">游记</span>
+                <div class="icon">
+                    <img src="./images/youjiIcon_38.png" alt="">
+                </div>
+                <span class="p-title-t">TRAVELNOTE</span>
+            </a>
+            <div class="p-details">
+                <ul class="note-list">
+                    <li class="note">
+                        <a href="#">
+                            <img src="./images/youji_38.png" alt="">
+                            <p class="note-title">跨越赤道的蜜月行-醉美毛里求斯</p>
+                            <p class="note-author">余頭小姐Rachel</p>
+                            <div class="note-desc">
+                                <p class="note-desc-content">花の時光旅行 【時光旅行】年轻就是 用来折腾的，有力气去想，  去做，而是为了稳定丢掉青春，为了平淡丢掉梦</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="note">
+                        <a href="#">
+                            <img src="./images/youji_38.png" alt="">
+                            <p class="note-title">跨越赤道的蜜月行-醉美毛里求斯</p>
+                            <p class="note-author">余頭小姐Rachel</p>
+                            <div class="note-desc">
+                                <p class="note-desc-content">花の時光旅行 【時光旅行】年轻就是 用来折腾的，有力气去想，  去做，而是为了稳定丢掉青春，为了平淡丢掉梦</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="note">
+                        <a href="#">
+                            <img src="./images/youji_38.png" alt="">
+                            <p class="note-title">跨越赤道的蜜月行-醉美毛里求斯</p>
+                            <p class="note-author">余頭小姐Rachel</p>
+                            <div class="note-desc">
+                                <p class="note-desc-content">花の時光旅行 【時光旅行】年轻就是 用来折腾的，有力气去想，  去做，而是为了稳定丢掉青春，为了平淡丢掉梦</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="note">
+                        <a href="#">
+                            <img src="./images/youji_38.png" alt="">
+                            <p class="note-title">跨越赤道的蜜月行-醉美毛里求斯</p>
+                            <p class="note-author">余頭小姐Rachel</p>
+                            <div class="note-desc">
+                                <p class="note-desc-content">花の時光旅行 【時光旅行】年轻就是 用来折腾的，有力气去想，  去做，而是为了稳定丢掉青春，为了平淡丢掉梦</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 游记 end -->
+    </div>
+
+    <!-- 底部 start -->
+    <div class="footer">
+        <div class="blin-content">
+            <div class="link-left">
+                <span>友情连接</span>
+                <p class="link-left-content">
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅游</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅游</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅游</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅游</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅游</a>
+                    <a href="#">乐乎</a>
+                    <a href="#">数字尾巴</a>
+                    <a href="#">豆瓣</a>
+                    <a href="#">环球旅游</a>
+                </p>
+            </div>
+            <div class="link-right">
+                <div class="weibo">
+                    <img src="./images/footer-ewm1.jpg" alt="">
+                    <span>微博二维码</span>
+                </div>
+                <div class="weixin">
+                    <img src="./images/footer-ewm2.jpg" alt="">
+                    <span>微信二维码</span>
+                </div>
+                <div class="connect">
+                    <p>电话:88888888</p>
+                    <p><i>邮编:100100</i><i>传真:88888888</i></p>
+                    <p>邮箱:info@newworldtours.cn</p>
+                    <p>地址:北京市东城区广渠门内大街安化北里1号长保大厦13层</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bot-content">
+                <span><a href="#">关于我们</a></span>
+                <span><a href="#">联系我们</a></span>
+                <span><a href="#">加入我们</a></span>
+                <span><a href="#">团队成员</a></span>
+                <span><a href="#">商务合作</a></span>
+                <p class="bot-foot">
+                    <em>蓝莓派版权所有</em><em>京ICP备12346335号</em>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 end -->
+
+
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

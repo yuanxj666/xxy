@@ -1,0 +1,140 @@
+.login-container{
+    width: 100%;
+    height: 800px;
+    background: url("../images/login-back_02.png") no-repeat center center;
+    background-size: cover;
+}
+
+.footer{
+    margin-top: 0px;
+}
+
+.login-container form{
+    width: 300px;
+    height: 360px;
+    background-color: #666;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+}
+
+.login-container .login-reg-select{
+    width: 100%;
+    height: 50px;
+}
+
+.login-reg-select .login-reg-btn{
+    display: block;
+    float: left;
+    width: 145px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+}
+
+.login-reg-btn:nth-child(1){
+    margin-right: 10px;
+}
+
+.login-reg-btn.on{
+    background-color: #e65e42;
+    color: #fff;
+}
+
+.login-reg-btn.on::after{
+    content:"";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    border-top: 10px solid #e65e42;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.account-box{
+    position: relative;
+    display: none;
+}
+.account-box.on{
+    display: block;
+}
+
+.account-box .input{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    text-indent: 10px;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.check-code{
+    overflow: hidden;
+    clear: both;
+}
+
+.check-code .check-input{
+    float: left;
+
+}
+
+#check_code_value{
+    width: 145px;
+    height: 40px;
+    margin-right: 10px;
+    border: 0;
+    text-indent: 10px;
+}
+
+.check-pic{
+    float: left;
+    width: 145px;
+}
+
+.check-pic img{
+    width: 100%;
+    height: 40px;
+}
+
+.login-btn{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #7fa900;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.other-login p{
+    font-size: 12px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.other-login a img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.login-details .findback-pwd{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+}
